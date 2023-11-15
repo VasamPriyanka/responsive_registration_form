@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REG FORM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <h2><b>Registration Form</b></h2>
+    <form>
+        <label>NAME:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your Name" size="30"/><br><br>
+        <label>FATHER'S NAME:</label>
+        <input type="text" name="f name" size="30"/><br><br>
+        <label>MOTHER'S NAME:</label>
+        <input type="text" name="m name" size="30"/><br><br>
+        <label>PHONE NUMBER:</label>
+        <input type="text" id="phn" name="phn" placeholder="017xxxxxxx" size="30"/><br><br>
+        <label>PINCODE</label>
+        <input type="text" id="pincode" name="pincode" placeholder="500017" size="30"/><br><br>
+        <label>EMAIL:</label>
+        <input type="email" name="email" placeholder="sample@gmail.com" size="30"/><br><br>
+        <label>PASSWORD:</label>
+        <input type="text" id="pwd" name="pwd" size="30"/><br><br>
+        <label>GENDER:</label>
+        <input type="radio" name="gender" value="Male"/>Male 
+        <input type="radio" name="gender" value="Female"/>Female
+        <input type="radio" name="gender" value="Others"/>Others<br><br>
+        <label>DATE OF BIRTH:</label>
+        <input type="text" id="dob" name="dob" size="20"/>(dd/mm/yyyy)<br><br>
+        <label>ADDRESS:</label>
+        <textarea rows="1.0" cols="50" placeholder="Street- House- Road-"></textarea><br><br>
+        <label>BLOOD GROUP:</label>
+        <select name="bldgrp">
+            <option>A+</option>
+            <option>A-</option>
+            <option>B+</option>
+            <option>B-</option>
+            <option>O+</option>
+            <option>O-</option>
+            <option>AB+</option>
+            <option>AB-</option>
+        </select><br><br>
+        <label>DEPARTMENT:</label>
+        <input type="radio" name="dept"/>CSE
+        <input type="radio" name="dept"/>ECE
+        <input type="radio" name="dept"/>IT
+        <input type="radio" name="dept"/>EEE
+        <input type="radio" name="dept"/>CIVIL
+        <input type="radio" name="dept"/>MECH<br><br>
+        <label>COURSE:</label>
+        <input type="checkbox" name="course"/>C
+        <input type="checkbox" name="course"/>C++
+        <input type="checkbox" name="course"/>JAVA
+        <input type="checkbox" name="course"/>PYTHON
+        <input type="checkbox" name="course"/>HTML
+        <input type="checkbox" name="course"/>CSS
+        <input type="checkbox" name="course"/>JS<br><br>
+        <label>PHOTO:</label>
+        <input type="file" name="photo" placeholder="Choose File"/><br><br><br>
+        <input type="submit" name="submit" value="Submit" onclick="validate()">&ensp;&ensp;
+        <input type="reset" name="reset" value="Reset">
+        <p>Click <a href="conform.html" onclick="acknowledgeRegistration()">here</a> to acknowledge.</p>   
+    </form>
+    <script src="validation.js"></script>
+</body>
+</html>
